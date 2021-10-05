@@ -26,4 +26,5 @@ Features:
     8. PopOver
     9. Page Routes
    10. Anime Dialog
+   11. Expansion Tile
 
