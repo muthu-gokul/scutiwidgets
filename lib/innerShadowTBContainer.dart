@@ -7,8 +7,9 @@ class InnerShadowTBContainer extends StatelessWidget {
   double height;
   double width;
   Widget child;
+  Color color;
 
-  InnerShadowTBContainer({required this.height,required this.width,required this.child});
+  InnerShadowTBContainer({required this.height,required this.width,required this.child,required this.color});
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
@@ -22,8 +23,8 @@ class InnerShadowTBContainer extends StatelessWidget {
             height: 15,
             decoration: BoxDecoration(
                 gradient: LinearGradient(colors:[
-                  Colors.white,
-                  Colors.white.withOpacity(0),
+                  color,
+                  color.withOpacity(0),
                 ],
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter
@@ -38,8 +39,8 @@ class InnerShadowTBContainer extends StatelessWidget {
               width: SizeConfig.screenWidth,
               decoration: BoxDecoration(
                   gradient: LinearGradient(colors:[
-                    Colors.white,
-                    Colors.white.withOpacity(0),
+                    color,
+                    color.withOpacity(0),
                   ],
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter
