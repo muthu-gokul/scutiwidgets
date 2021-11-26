@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg:
+  shared_preferences:
+  permission_handler:
 
 dev_dependencies:
   flutter_test:
